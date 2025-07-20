@@ -119,13 +119,13 @@ export default function ContactPage() {
               className="text-center space-y-8"
             >
               <h1 className="text-4xl md:text-6xl font-display font-bold">
-                Let's{' '}
+                Let&apos;s{' '}
                 <span className="gradient-text-primary">
                   Connect
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-                Ready to create content that converts? I'd love to hear about your YouTube channel, 
+                Ready to create content that converts? I&apos;d love to hear about your YouTube channel, 
                 Instagram strategy, or brand video needs and discuss how we can grow your audience together.
               </p>
             </motion.div>
@@ -179,7 +179,7 @@ export default function ContactPage() {
                     {success && (
                       <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
                         <p className="text-green-800 dark:text-green-200 text-sm">
-                          ✅ Message sent successfully! I'll get back to you within 24 hours.
+                          ✅ Message sent successfully! I&apos;ll get back to you within 24 hours.
                         </p>
                       </div>
                     )}
@@ -250,11 +250,16 @@ export default function ContactPage() {
                             id="budget"
                             {...register('budget')}
                             className="w-full h-10 px-3 py-2 text-sm bg-card text-foreground border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                            style={{ 
+                              backgroundColor: '#1f2937', 
+                              color: '#f9fafb',
+                              colorScheme: 'dark'
+                            }}
                           >
-                            <option value="">Select budget range</option>
-                            <option value="under-10k">Under ₹10,000</option>
-                            <option value="10k-50k">₹10,000 - ₹50,000</option>
-                            <option value="50k-100k">₹50,000 - ₹1,00,000</option>
+                            <option value="" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>Select budget range</option>
+                            <option value="under-10k" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>Under ₹10,000</option>
+                            <option value="10k-50k" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>₹10,000 - ₹50,000</option>
+                            <option value="50k-100k" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>₹50,000 - ₹1,00,000</option>
                           </select>
                         </div>
 
@@ -266,12 +271,17 @@ export default function ContactPage() {
                             id="timeline"
                             {...register('timeline')}
                             className="w-full h-10 px-3 py-2 text-sm bg-card text-foreground border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
+                            style={{ 
+                              backgroundColor: '#1f2937', 
+                              color: '#f9fafb',
+                              colorScheme: 'dark'
+                            }}
                           >
-                            <option value="">Select timeline</option>
-                            <option value="asap">ASAP</option>
-                            <option value="1-month">Within 1 month</option>
-                            <option value="2-3-months">2-3 months</option>
-                            <option value="flexible">Flexible</option>
+                            <option value="" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>Select timeline</option>
+                            <option value="asap" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>ASAP</option>
+                            <option value="1-month" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>Within 1 month</option>
+                            <option value="2-3-months" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>2-3 months</option>
+                            <option value="flexible" style={{ backgroundColor: '#1f2937', color: '#f9fafb' }}>Flexible</option>
                           </select>
                         </div>
                       </div>
@@ -324,16 +334,16 @@ export default function ContactPage() {
                 className="space-y-8"
               >
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Let's Create Together</h3>
+                  <h3 className="text-2xl font-bold mb-4">Let&apos;s Create Together</h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
                       Whether you need YouTube video editing, Instagram content creation, 
-                      eye-catching thumbnails, or brand video work, I'm here to help 
+                      eye-catching thumbnails, or brand video work, I&apos;m here to help 
                       grow your audience and boost engagement.
                     </p>
                     <p>
-                      I believe in collaboration and understanding your brand's voice. 
-                      From concept to final delivery, I'll work closely with you to 
+                      I believe in collaboration and understanding your brand&apos;s voice. 
+                      From concept to final delivery, I&apos;ll work closely with you to 
                       create content that truly resonates with your audience.
                     </p>
                   </div>
@@ -351,7 +361,7 @@ export default function ContactPage() {
                       <div>
                         <h4 className="font-semibold">Initial Consultation</h4>
                         <p className="text-sm text-muted-foreground">
-                          We'll discuss your project, requirements, and vision.
+                          We&apos;ll discuss your project, requirements, and vision.
                         </p>
                       </div>
                     </div>
@@ -363,7 +373,7 @@ export default function ContactPage() {
                       <div>
                         <h4 className="font-semibold">Proposal & Planning</h4>
                         <p className="text-sm text-muted-foreground">
-                          I'll create a detailed proposal and project timeline.
+                          I&apos;ll create a detailed proposal and project timeline.
                         </p>
                       </div>
                     </div>
@@ -375,7 +385,7 @@ export default function ContactPage() {
                       <div>
                         <h4 className="font-semibold">Creation & Delivery</h4>
                         <p className="text-sm text-muted-foreground">
-                          I'll execute the project and deliver your final assets.
+                          I&apos;ll execute the project and deliver your final assets.
                         </p>
                       </div>
                     </div>
@@ -387,7 +397,7 @@ export default function ContactPage() {
                     <div className="text-center">
                       <h4 className="font-semibold mb-2">Prefer to call?</h4>
                       <p className="text-muted-foreground mb-4">
-                        I'm available for calls Monday through Friday, 9 AM to 6 PM IST.
+                        I&apos;m available for calls Monday through Friday, 9 AM to 6 PM IST.
                       </p>
                       <Button variant="outline" size="lg" asChild>
                         <a href="tel:+918988190839">

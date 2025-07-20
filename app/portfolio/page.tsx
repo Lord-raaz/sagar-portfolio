@@ -245,7 +245,7 @@ export default function PortfolioPage() {
                 Like What You See?
               </h2>
               <p className="text-lg text-muted-foreground">
-                Let's discuss your project and create something amazing together.
+                Let&apos;s discuss your project and create something amazing together.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>

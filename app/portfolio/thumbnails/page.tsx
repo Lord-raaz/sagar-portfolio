@@ -268,7 +268,7 @@ export default function ThumbnailsPortfolioPage() {
               Ready to Boost Your Click-Through Rates?
             </h2>
             <p className="text-lg text-muted-foreground">
-              Let's create thumbnails that grab attention, drive clicks, and grow your audience.
+              Let&apos;s create thumbnails that grab attention, drive clicks, and grow your audience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>

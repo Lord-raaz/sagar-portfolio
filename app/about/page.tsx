@@ -47,7 +47,7 @@ export default function AboutPage() {
                     transition={{ duration: 4, repeat: Infinity }}
                   />
                   <h1 className="text-4xl md:text-5xl font-display font-bold mb-6 relative">
-                    Hi, I'm{' '}
+                    Hi, I&apos;m{' '}
                     <motion.span 
                       className="gradient-text-animated inline-block"
                       animate={{ 
@@ -97,9 +97,9 @@ export default function AboutPage() {
                       transition={{ type: "spring", stiffness: 300 }}
                     >
                       <span className="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-accent to-purple-500 rounded-full opacity-0 hover:opacity-100 transition-opacity" />
-                      When I'm not editing or designing, you can find me analyzing trending content, 
+                      When I&apos;m not editing or designing, you can find me analyzing trending content, 
                       learning new editing techniques, or collaborating with creators to produce 
-                      content that stands out in today's competitive digital landscape.
+                      content that stands out in today&apos;s competitive digital landscape.
                     </motion.p>
                   </motion.div>
                 </div>

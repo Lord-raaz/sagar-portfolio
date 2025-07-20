@@ -86,7 +86,7 @@ export default function YouTubePortfolioPage() {
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               Professional YouTube videos crafted to inform, entertain, and engage audiences. 
-              Each video is optimized for YouTube's algorithm with compelling thumbnails, 
+              Each video is optimized for YouTube&apos;s algorithm with compelling thumbnails, 
               strategic SEO, and content that keeps viewers watching.
             </p>
             
@@ -124,7 +124,7 @@ export default function YouTubePortfolioPage() {
             viewport={{ once: true }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-8"
           >
-            {youtubeVideos.map((video, index) => (
+            {youtubeVideos.map((video) => (
               <motion.div key={video.id} variants={staggerItem}>
                 <Card className="overflow-hidden group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-background/80 to-background border-white/10 backdrop-blur-sm">
                   <div className="aspect-video bg-black relative overflow-hidden">
@@ -237,7 +237,7 @@ export default function YouTubePortfolioPage() {
               Ready to Create Amazing YouTube Content?
             </h2>
             <p className="text-lg text-muted-foreground">
-              Let's collaborate to produce YouTube videos that educate, entertain, and grow your channel.
+              Let&apos;s collaborate to produce YouTube videos that educate, entertain, and grow your channel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>

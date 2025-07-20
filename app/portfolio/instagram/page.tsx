@@ -135,7 +135,7 @@ export default function InstagramPortfolioPage() {
             viewport={{ once: true }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
           >
-            {instagramVideos.map((video, index) => (
+            {instagramVideos.map((video) => (
               <motion.div key={video.filename} variants={staggerItem}>
                 <Card 
                   className="overflow-hidden group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-br from-background/80 to-background border-white/10 backdrop-blur-sm cursor-pointer"
@@ -295,7 +295,7 @@ export default function InstagramPortfolioPage() {
               Ready to Go Viral?
             </h2>
             <p className="text-lg text-muted-foreground">
-              Let's create Instagram content that gets noticed, shared, and drives real results for your brand.
+              Let&apos;s create Instagram content that gets noticed, shared, and drives real results for your brand.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>

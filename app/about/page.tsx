@@ -403,8 +403,13 @@ export default function AboutPage() {
                   title: 'Video Editing',
                   description: 'Expanded into video editing and post-production services.',
                 },
-                {
+                 {
                   year: '2022',
+                  title: 'Art of Content creation program',
+                  description: 'Did a BrightSo content creation program and learned about content creation',
+                },
+                {
+                  year: '2023',
                   title: 'Studio Setup',
                   description: 'Established professional studio and invested in high-end equipment.',
                 },
@@ -433,6 +438,158 @@ export default function AboutPage() {
                 </motion.div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Certificates */}
+        <section className="py-20 relative overflow-hidden">
+          {/* Background effects */}
+          <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-purple-500/5 to-primary/5" />
+          <motion.div
+            className="absolute top-20 left-20 w-40 h-40 bg-gradient-to-br from-accent/10 to-purple-500/10 rounded-full blur-3xl"
+            animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0.6, 0.3] }}
+            transition={{ duration: 5, repeat: Infinity }}
+          />
+          <motion.div
+            className="absolute bottom-20 right-20 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-2xl"
+            animate={{ scale: [1, 1.2, 1], opacity: [0.4, 0.7, 0.4] }}
+            transition={{ duration: 4, repeat: Infinity, delay: 1.5 }}
+          />
+          
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <span className="gradient-text-accent">
+                  Certifications & Recognition
+                </span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Professional certifications that validate my expertise in video editing and content creation
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="flex justify-center"
+            >
+              <motion.div 
+                className="relative max-w-2xl w-full"
+                whileHover={{ scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <Card className="overflow-hidden relative group bg-gradient-to-br from-accent/10 via-purple-500/10 to-primary/10 backdrop-blur-sm border-white/20 hover:border-white/30 transition-all duration-500 shadow-2xl">
+                  {/* Shimmer effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+                  
+                  {/* Floating decorations */}
+                  <motion.div
+                    className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-accent to-purple-500 rounded-full opacity-60"
+                    animate={{ scale: [1, 1.3, 1], rotate: [0, 180, 360] }}
+                    transition={{ duration: 3, repeat: Infinity }}
+                  />
+                  <motion.div
+                    className="absolute bottom-4 left-4 w-6 h-6 bg-gradient-to-br from-primary to-secondary rounded-full opacity-70"
+                    animate={{ scale: [1, 1.2, 1], rotate: [360, 180, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, delay: 1 }}
+                  />
+                  
+                  <CardContent className="p-8 relative z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                      {/* Certificate Image */}
+                      <motion.div 
+                        className="relative overflow-hidden rounded-xl shadow-lg border border-white/20"
+                        whileHover={{ scale: 1.03 }}
+                        transition={{ type: "spring", stiffness: 400 }}
+                      >
+                        <div className="aspect-[4/3] relative">
+                          <Image
+                            src="/certificate.jpeg"
+                            alt="Professional Certification in Video Editing and Content Creation"
+                            fill
+                            className="object-cover object-center"
+                            priority
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+                          
+                          {/* Certificate badge overlay */}
+                          <motion.div
+                            className="absolute top-3 left-3 bg-gradient-to-r from-accent/90 to-purple-500/90 text-white px-3 py-1 rounded-full text-xs font-bold backdrop-blur-sm"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.5 }}
+                          >
+                            ✨ Certified
+                          </motion.div>
+                        </div>
+                      </motion.div>
+                      
+                      {/* Certificate Details */}
+                      <div className="space-y-6">
+                        <motion.div
+                          initial={{ opacity: 0, x: 20 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ delay: 0.3 }}
+                        >
+                          <h3 className="text-2xl font-bold mb-3 gradient-text-accent">
+                            Professional Certification
+                          </h3>
+                          <p className="text-muted-foreground leading-relaxed mb-4">
+                            Officially certified in advanced video editing techniques, content creation strategies, 
+                            and digital media production. This certification validates my expertise and commitment 
+                            to delivering professional-quality work.
+                          </p>
+                        </motion.div>
+                        
+                        <motion.div 
+                          className="space-y-3"
+                          initial={{ opacity: 0, x: 20 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ delay: 0.4 }}
+                        >
+                          <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-gradient-to-r from-accent to-purple-500 rounded-full"></div>
+                            <span className="text-sm font-medium">Advanced Video Editing Techniques</span>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-primary rounded-full"></div>
+                            <span className="text-sm font-medium">Content Creation & Strategy</span>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <div className="w-2 h-2 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+                            <span className="text-sm font-medium">Digital Media Production</span>
+                          </div>
+                        </motion.div>
+                        
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.5 }}
+                          className="pt-4"
+                        >
+                          <Button 
+                            variant="outline" 
+                            size="sm"
+                            className="group border-2 border-gradient-to-r from-accent to-purple-500 hover:bg-gradient-to-r hover:from-accent/10 hover:to-purple-500/10 transform hover:scale-105 transition-all duration-300"
+                          >
+                            <Award className="mr-2 h-4 w-4" />
+                            <span className="gradient-text-accent">
+                              View Certificate
+                            </span>
+                          </Button>
+                        </motion.div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </motion.div>
           </div>
         </section>
       </div>
